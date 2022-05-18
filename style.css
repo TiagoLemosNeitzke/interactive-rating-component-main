@@ -16,7 +16,87 @@
     --very-dark-blue: hsl(216, 12%, 8%);
 }
 
-body p{
-    font-size: 15px;
+body{
     font-family: 'Overpass', sans-serif;
+    
+    display        : flex;
+    justify-content: center;
+    align-items  : center;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    background: var(--very-dark-blue);
+    width: 420px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.container .container-image{
+    background: var(--dark-blue);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container h2 {
+    color: var(--white);
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.container p {
+    color: var(--light-grey);
+    font-size: 15px;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.container .container-satisfation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .container-satisfation div{
+    background: var(--dark-blue);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-grey);
+    font-size: 18px;
+    transition: all 1s;
+}
+
+.container .container-satisfation div:hover{
+    background-color: var(--Orange);
+    color: var(--white);
+}
+
+.container button {
+    background: var(--Orange);
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 8px;
+    margin: 0 auto;
+}
+
+.container button:hover{
+    background: var(--white);
+    color: var(--Orange);
 }
