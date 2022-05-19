@@ -36,8 +36,13 @@ body{
     padding: 30px;
 }
 
+.container#home{
+    display: block;
+}
+
 .container#thanks{
-    display: flex;
+    display: none;
+    
     justify-content: center;
     text-align: center;
 }
@@ -96,11 +101,11 @@ body{
     font-size: 18px;
     transition: all 1s;
 }
-
+/*
 .container .container-satisfation div:hover{
     background-color: var(--Orange);
     color: var(--white);
-}
+}*/
 
 .container button[type="submit"] {
     background: var(--Orange);
